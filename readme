@@ -1,0 +1,122 @@
+CSCI-140 Project 01: README
+===============================
+(please use the RETURN key to make multiple lines; don't assume autowrap.)
+
+0. Author Information
+---------------------
+
+CS Username: 	cmb9400		Name:  		Carter Buce
+
+-------------------
+1. Problem Analysis
+-------------------
+
+Summarize the analysis work you did. 
+What new information did it reveal?  How did this help you?
+How much time did you spend on problem analysis?
+
+	The first thing I did for this project was figure out how to
+	actually play the game. I learned the rules, thought about
+	strategies, and analyzed the requirements of the project.
+	This revealed a few smaller details that I didn't notice 
+	before, like that the first move can't be in the center of
+	the board. It also gave me a better understanding of how all
+	the parts of the project worked with each other. I spent about
+	1-2 hours on problem analysis.
+
+------------------
+2a. General Design
+------------------
+
+Explain the design you developed to use and why. 
+What are the major components? What connects to what?
+How much time did you spend on design?
+
+	The integral part of my design is the game board. A lot of the
+	algorithms depend on where the player can place a piece, and
+	where the other players' pieces are on the board. For the 
+	board, I used a 2d array of integers, and when a player put 
+	a piece in a space, it would change that space to a negative
+	number depending on what player it was. I took
+    a piece of paper and wrote out each class I would have,
+    what methods those classes would have, and what arguments
+    needed to be passed to them. I spent about 3-4 hours learning
+    how the game works and designing the framework of my code. 
+	
+
+-----------------------------
+2b. Design of the Good Player
+-----------------------------
+
+Explain the design behind your "good" player.  What was your overall
+idea of a good move?
+
+	My good player was based off of two different conditions. The
+	first condition was to check for the maximum amount of empty 
+	spaces around it. I think this is important so that in the 
+	beginning of the game, it chooses a move towards the center of the 
+	board and not in a corner. If there are multiple moves that have
+	the maximum amount of spaces possible, the next test was for 
+	blocking the opponent. This ensured that wherever the piece was 
+	placed, it would prevent the opponent from being able to make a 
+	move next to one of their other pieces.
+
+-----------------------------
+3. Implementation and Testing
+-----------------------------
+
+Describe your implementation efforts here; this is the coding and testing.
+
+What did you put into code first?
+How did you test it?
+How well does the solution work? 
+Does it completely solve the problem?
+Is anything missing?
+How could you do it differently?
+How could you improve it?
+
+How much total time would you estimate you worked on the project? 
+If you had to do this again, what would you do differently?
+
+	The first thing I put into code was the board. I did this because
+	I knew exactly how it should work, and it is the one thing that is
+	used by pretty much all of the other code, so nothing would work 
+	if the board didn't work. Then I worked on the BritishSquare class
+	so that I knew exactly what methods I would need in the player
+	classes, and then I developed the Bad, random and human classes so
+	that I could make sure that everything worked before I tried making
+	a "good" class. I tested the project by logically figuring out where
+	the pieces would be placed, and by pitting the random, bad, and good
+	classes against each other multiple times to make sure everything works
+	as expected in every situation. I also tested it against the sample inputs
+	and outputs to make sure that my program outputs exactly what it should.
+	
+	I probably worked 10-12 hours on this project.
+	If I could do this again, I would aggregate more methods into the Player
+	class, because there is definitely ways to shorten the code that I have 
+	written. One of the main things I realized is that I could have given 
+	the player class a piece type (x or o) and then made that a variable in
+	the instance, so that I didn't have to keep passing the player between
+	methods. Looking back now, I can find multiple ways to make it more efficient.
+
+----------------------
+4. Development Process
+----------------------
+
+Describe your development process here; this is the overall process.
+
+How much problem analysis did you do before your initial coding effort?
+How much design work and thought did you do before your initial coding effort?
+How many times did you have to go back to assess the problem?
+
+What did you learn about software development?
+
+	I did a lot of problem analysis and was therefore able to understand the
+	requirements and workings of the game well. However, I do not think I did 
+	enough design work and thought, because I would often end up confused and
+	having to look back at my previous code. I did not think each method through
+	well enough, because sometimes I would have to go back and either add methods
+	or change them. I learned that software development relies heavily on pre-planning
+	and less on the actual coding of the project, because once you know exactly what
+	to do it's much easier to make the project than to design it as you are coding and 
+	change your mind about something.

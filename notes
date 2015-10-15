@@ -1,0 +1,39 @@
+The players take turns placing pieces on empty squares. A piece cannot be placed in 
+a square that is orthogonally adjacent to an enemy piece. The first piece cannot be 
+dropped in the center square. A player who has no move must pass. The other player 
+can continue placing pieces as long as possible. 
+ 
+The player with the most pieces on the board at the end of a game wins that game. 
+That player scores a number of points equal to the number of pieces he has in 
+excess of the opponent. The players then continue playing games, alternating who 
+goes first, until one player accumulates seven points. That player is the overall 
+winner. 
+
+~http://www.zillions-of-games.com/cgi-bin/zilligames/submissions.cgi?do=show;id=126
+
+-player x goes first
+-can not place if top, bottom, left or right are enemy pieces
+-if first move, cannot be placed in center square
+-if no moves left, pass, but other player can continue placing
+-winner of a match has most pieces on board, then board resets and next game until 
+one player has 7 points and wins the game
+
+
+BritishSquare.java
+	getInput(string) will display a string and return the user input (accessible from other methods so only one scanner is used)
+	main method will check if board size is possible, make board and players, call run method
+	run method will loop asking players to get move
+	
+	
+Board.java
+	main method takes a number and makes a two dimensional square array with sizes of that number, fills it with numbers
+	print method will print the board
+	boolean place(int, char) method to check if can place in a spot where char is the player, x or o
+	getsize method
+	hasmoveleft(char player)
+	
+Player.java - abstract class
+	getmove - returns -1 if can't place anywhere, otherwise returns the number to place at
+	getplayertype
+	
+	 

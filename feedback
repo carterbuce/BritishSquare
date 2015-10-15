@@ -1,0 +1,55 @@
+CSCI-140 Project 01: Feedback
+===============================
+(please use the RETURN key to make multiple lines; don't assume autowrap.)
+
+0. Author Information
+---------------------
+
+CS Username:    cmb9400           Name:           Carter Buce
+
+1. Assignment Feedback
+----------------------
+a) What did you learn by doing this assignment?
+
+	Doing this assignment made me learn a lot more about working with 
+	2d arrays and abstract classes. In particular, I learned how to check
+	spaces in a 2d array without getting an out of bounds exception by using
+	the min and max functions. 
+
+
+----------------------
+b) What was easy about this assignment?
+
+	The easiest part about the assignment was the game that was chosen; if it were
+	a different board game than "british square" (which I've never heard of before)
+	there would be a lot more complicated operations going on instead of just checking
+	if a piece can be placed and then adding one to the score.
+
+
+----------------------
+c) What was harder than you originally thought?
+
+	Printing the board was a lot harder than I initially thought. There were a lot of
+	conditions to go through and check before printing different things. For example, 
+	I had to check if a space was occupied for both the first and second rows of a cell,
+	and it was difficult to set up multiple nested loops and get the board formatted correctly.
+
+
+----------------------
+d) What can the instructor do to improve this assignment?
+
+	I think the assignment could be improved by using a game we would be familiar with, because
+	it was very hard to think of a "good" algorithm 
+
+
+----------------------
+e) What would you have liked to do in this assignment?
+
+	I would have liked to use a new concept, maybe learning how to make a gui and making the 
+	game board into a gui interface
+
+
+----------------------
+f) What other issues would you like to discuss?
+
+	I really didn't understand what it meant to only use one scanner if there were two humans
